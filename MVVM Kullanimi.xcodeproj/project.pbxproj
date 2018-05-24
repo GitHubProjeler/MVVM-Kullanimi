@@ -12,6 +12,8 @@
 		AC8C2B5B20B6F271008DE364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8C2B5920B6F271008DE364 /* Main.storyboard */; };
 		AC8C2B5D20B6F271008DE364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8C2B5C20B6F271008DE364 /* Assets.xcassets */; };
 		AC8C2B6020B6F271008DE364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8C2B5E20B6F271008DE364 /* LaunchScreen.storyboard */; };
+		AC8C2B6C20B6F485008DE364 /* MoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8C2B6B20B6F485008DE364 /* MoneyModel.swift */; };
+		AC8C2B6E20B6F7C4008DE364 /* MoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8C2B6D20B6F7C4008DE364 /* MoneyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AC8C2B5C20B6F271008DE364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8C2B5F20B6F271008DE364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8C2B6120B6F271008DE364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8C2B6B20B6F485008DE364 /* MoneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyModel.swift; sourceTree = "<group>"; };
+		AC8C2B6D20B6F7C4008DE364 /* MoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		AC8C2B5420B6F271008DE364 /* MVVM Kullanimi */ = {
 			isa = PBXGroup;
 			children = (
+				AC8C2B6A20B6F441008DE364 /* ViewModel */,
+				AC8C2B6920B6F43B008DE364 /* View */,
+				AC8C2B6820B6F430008DE364 /* Controller */,
+				AC8C2B6720B6F40B008DE364 /* Model */,
 				AC8C2B5520B6F271008DE364 /* AppDelegate.swift */,
-				AC8C2B5720B6F271008DE364 /* ViewController.swift */,
-				AC8C2B5920B6F271008DE364 /* Main.storyboard */,
 				AC8C2B5C20B6F271008DE364 /* Assets.xcassets */,
 				AC8C2B5E20B6F271008DE364 /* LaunchScreen.storyboard */,
 				AC8C2B6120B6F271008DE364 /* Info.plist */,
 			);
 			path = "MVVM Kullanimi";
+			sourceTree = "<group>";
+		};
+		AC8C2B6720B6F40B008DE364 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C2B6B20B6F485008DE364 /* MoneyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC8C2B6820B6F430008DE364 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C2B5720B6F271008DE364 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC8C2B6920B6F43B008DE364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C2B5920B6F271008DE364 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC8C2B6A20B6F441008DE364 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC8C2B6D20B6F7C4008DE364 /* MoneyViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8C2B6C20B6F485008DE364 /* MoneyModel.swift in Sources */,
 				AC8C2B5820B6F271008DE364 /* ViewController.swift in Sources */,
 				AC8C2B5620B6F271008DE364 /* AppDelegate.swift in Sources */,
+				AC8C2B6E20B6F7C4008DE364 /* MoneyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
