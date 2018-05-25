@@ -19,13 +19,16 @@ class ViewController: UIViewController {
     var moneyModel = MoneyModel()
     
     func printScreen(){
-        paraBirimiAdi.text = moneyModel.full_name
+        paraBirimiAdi.text = moneyModel.full_name // moneyViewModel.moneyMode.full_name şeklinde de ulaşılabilir.
         kod.text = moneyModel.code
-        alisFiyati.text = moneyViewModel.buyingString
-        satisFiyati.text = moneyViewModel.sellingStrin
-        tarih.text = moneyViewModel.dateString
+        alisFiyati.text = "Alış Fiyatı : " + moneyViewModel.buyingString
+        satisFiyati.text = "Satış Fiyatı : " +  moneyViewModel.sellingStrin
+        tarih.text = "Güncelleme Tarihi : " + moneyViewModel.dateString
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        printScreen()
+    }
 
 }
 
